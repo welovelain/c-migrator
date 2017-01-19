@@ -13,6 +13,7 @@ Create %configname%.properties file in properties dir.
 It should contain:
 
 host = cassandra_host
+
 port=port
 
 migrations_dir = path_to_migrations
@@ -31,11 +32,6 @@ lein rollback %configname% N -> rollbacks last N migrations
 lein rollback %configname% %id% -> rollbacks until find the needed %id% of migration, then stops
 
 
-## Options
-
-
-## Examples
-
 ### Bugs
 
 When running:
@@ -50,13 +46,4 @@ Bug is reported: https://github.com/weavejester/ragtime/issues/109
 
 In order to avoid the bug, checking of ID is programmed manually.
 
-### Any Other Sections
-### That You Think
-### Might be Useful
 
-## License
-
-Copyright © 2017 Unicenter
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
